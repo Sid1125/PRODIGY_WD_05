@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <title>Weather App</title>
+</head>
+<body>
+    <header>
+        <h1>🌤️ Weather Forecast</h1> <!-- Added an emoji -->
+    </header>
+    
+    <main>
+        <div class="input-container">
+            <input type="text" id="cityInput" placeholder="Enter city name" required>
+            <button id="getWeather"><i class="fas fa-cloud-sun"></i> Get Weather</button> <!-- Added an icon -->
+        </div>
+
+        <div id="weatherData" class="card">
+            <!-- Weather data will be displayed here -->
+        </div>
+
+        <div id="map" class="map-container">
+            <!-- Map will be displayed here -->
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Siddharth Sinha 🌍</p> <!-- Added an emoji -->
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+</body>
+</html>
